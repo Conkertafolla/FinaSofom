@@ -1,0 +1,418 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.conke.avaluo.propertyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/name_reputable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nombre del acreditado"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/name_ofetent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nombre del oferente"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dirección"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:theme="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/date_start"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Inicio"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:theme="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/date_end"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Fin"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Habitaciones"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/lessRoom"
+                                    style="@style/cournedButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="-"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                                <Button
+                                    android:id="@+id/moreRoom"
+                                    style="@style/cournedButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="+"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/lblRoom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Niveles"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/lessFloor"
+                                    style="@style/cournedButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_weight="1"
+                                    android:text="-"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                                <Button
+                                    android:id="@+id/moreFloor"
+                                    style="@style/cournedButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_weight="1"
+                                    android:text="+"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/lblFloor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Baños"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/lessBath"
+                                style="@style/cournedButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/moreBath"
+                                style="@style/cournedButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:text="+"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/lblBath"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkParking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Estacionamiento"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorLink="@color/colorPrimaryDark"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_prev_property"
+                            style="@style/cournedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/imageView"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:text="Anterior"
+                            tools:text="Anterior" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_next_property"
+                            style="@style/cournedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/imageView"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:text="Siguiente"
+                            tools:text="Siguiente" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
